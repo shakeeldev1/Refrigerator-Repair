@@ -1,9 +1,11 @@
 import React from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
-import Home from './component/pages/Home';
-import Navbar from './component/commonpages/Navbar';
-import AboutPage from './component/commonpages/AboutPage';
-import FridgeServicesPage from './component/commonpages/FridgeSericePage';
+import Home from './pages/Home';
+
+
+import Navbar from './pages/Navbar';
+import AboutPage from './pages/AboutPage';
+import FridgeServicesPage from './pages/FridgeServicesPage';
 
 const MainLayout = () => {
   return (
