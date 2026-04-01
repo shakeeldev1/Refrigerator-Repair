@@ -4,15 +4,18 @@ import { TbMailFilled } from 'react-icons/tb';
 
 export default function Subscribe() {
   return (
-    <section className="relative w-full py-10 overflow-hidden flex items-center justify-center">
+    <section className="relative w-full py-10 overflow-hidden flex items-center justify-center" 
+    style={{
+        "background":'url(/img.png)',
+        "backgroundSize":'cover'
+      }}
+    >
       
       {/* Background Image & Energetic Overlays */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/img.png" 
-          alt="Professional Cooling Team Background" 
-          className="w-full h-full object-cover object-center"
-        />
+      <div className="absolute inset-0 z-0"
+      
+        
+        >
         {/* Deep blue gradient overlay for professional look and text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#142A51]/95 via-[#0195FF]/80 to-[#142A51]/60 mix-blend-multiply" />
         
