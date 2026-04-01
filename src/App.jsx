@@ -3,6 +3,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import Navbar from './component/common/Navbar';
 import AboutPage from './pages/AboutPage';
 import FridgeServicesPage from './pages/FridgeServicesPage';
+import Dishwasherpage from './pages/Dishwasherpage';
 const MainLayout = () => {
   return (
     <>
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/fridgeservices",
         element: <FridgeServicesPage/>,
+      },
+      {
+        path: "/dishwasherservice",
+        element: <Dishwasherpage/>,
       },
     ],
   },

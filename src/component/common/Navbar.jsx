@@ -44,7 +44,7 @@ function Navbar() {
             <div className="absolute left-0 top-full mt-2 w-64 bg-[#142A51] border border-[#FFBB00]/30 rounded-lg shadow-xl hidden group-hover:block">
 
               <DropdownItem to="/fridgeservices" label="Fridge Repair" />
-              <DropdownItem to="/services/dishwasher" label="Dishwasher Repair" />
+              <DropdownItem to="/dishwasherservice" label="Dishwasher Repair" />
               <DropdownItem to="/services/washing-machine" label="Washing Machine Repair" />
               <DropdownItem to="/services/gas-cooker" label="Gas Cooker Repair" />
               <DropdownItem to="/services/electric-stove" label="Electric Stove Repair" />

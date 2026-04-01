@@ -97,8 +97,7 @@ function FridgeAppliances() {
               data-aos="zoom-in"
               className="bg-[#0f1f3d] p-5 rounded-xl border border-[#FFC527]/20 shadow-md  group"
             >
-
-              {/* ICON */}
+             {/* ICON */}
               <div className="text-[#FFC527] text-3xl mb-3 group-hover:scale-110 transition group-hover:hover:shadow-[#FFC527]/20 hover:-translate-y-1 transition duration-300 ">
                 {item.icon}
               </div>
