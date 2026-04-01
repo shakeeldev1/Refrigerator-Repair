@@ -1,10 +1,14 @@
 import React from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import Home from './component/pages/Home';
+import Navbar from './component/commonpages/Navbar';
+import AboutPage from './component/commonpages/AboutPage';
+import FridgeServicesPage from './component/commonpages/FridgeSericePage';
 
 const MainLayout = () => {
   return (
     <>
-      <h1>Navbar</h1>
+      <Navbar />
       <Outlet />
       <h1>Footer</h1>
     </>
@@ -18,7 +22,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Home</h1>,
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
+      {
+        path: "/fridgeservices",
+        element: <FridgeServicesPage />,
       },
     ],
   },
