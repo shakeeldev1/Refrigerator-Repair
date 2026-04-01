@@ -1,5 +1,12 @@
 import React from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import Home from './pages/Home';
+
+
+import Navbar from './pages/Navbar';
+import AboutPage from './pages/AboutPage';
+import FridgeServicesPage from './pages/FridgeServicesPage';
+
 import Navbar from './component/common/Navbar';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
