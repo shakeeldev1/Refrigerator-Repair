@@ -45,9 +45,9 @@ function Navbar() {
 
               <DropdownItem to="/fridgeservices" label="Fridge Repair" />
               <DropdownItem to="/dishwasherservice" label="Dishwasher Repair" />
-              <DropdownItem to="/services/washing-machine" label="Washing Machine Repair" />
-              <DropdownItem to="/services/gas-cooker" label="Gas Cooker Repair" />
-              <DropdownItem to="/services/electric-stove" label="Electric Stove Repair" />
+              <DropdownItem to="/washing-machineservice" label="Washing Machine Repair" />
+              <DropdownItem to="/gas-cookerservice" label="Gas Cooker Repair" />
+              <DropdownItem to="/electric-stoveservice" label="Electric Stove Repair" />
 
             </div>
           </li>

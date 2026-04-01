@@ -1,0 +1,95 @@
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+
+function Footer() {
+  return (
+    <footer className="w-full bg-[#142A51] text-white pt-16 pb-8 px-4 md:px-10">
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+        {/* BRAND */}
+        <div>
+          <h2 className="text-2xl font-bold text-[#FFBB00] mb-4">
+            DishCare
+          </h2>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Providing reliable and professional dishwasher repair services with
+            24/7 support. Your trusted partner for quick and efficient solutions.
+          </p>
+
+          {/* SOCIAL ICONS */}
+          <div className="flex gap-4 mt-6 text-[#FFBB00] text-xl">
+            <FaFacebook className="cursor-pointer hover:scale-110 transition" />
+            <FaTwitter className="cursor-pointer hover:scale-110 transition" />
+            <FaInstagram className="cursor-pointer hover:scale-110 transition" />
+            <FaLinkedin className="cursor-pointer hover:scale-110 transition" />
+          </div>
+        </div>
+
+        {/* QUICK LINKS */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#FFBB00] mb-4">
+            Quick Links
+          </h3>
+          <ul className="space-y-2 text-gray-300 text-sm">
+            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+              Home
+            </li>
+            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+              About Us
+            </li>
+            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+              Services
+            </li>
+            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+              Contact
+            </li>
+          </ul>
+        </div>
+
+        {/* SERVICES */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#FFBB00] mb-4">
+            Services
+          </h3>
+          <ul className="space-y-2 text-gray-300 text-sm">
+            <li className="hover:text-[#FFBB00] transition">Repair</li>
+            <li className="hover:text-[#FFBB00] transition">Maintenance</li>
+            <li className="hover:text-[#FFBB00] transition">Installation</li>
+            <li className="hover:text-[#FFBB00] transition">Emergency Support</li>
+          </ul>
+        </div>
+
+        {/* NEWSLETTER */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#FFBB00] mb-4">
+            Newsletter
+          </h3>
+          <p className="text-gray-300 text-sm mb-4">
+            Subscribe to get the latest updates and offers.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="px-4 py-2 rounded-lg text-black focus:outline-none w-full"
+            />
+            <button className="bg-[#FFBB00] text-[#142A51] px-5 py-2 rounded-lg font-semibold hover:scale-105 transition">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      {/* BOTTOM BAR */}
+      <div className="border-t border-gray-600 mt-12 pt-6 text-center text-gray-400 text-sm">
+        © {new Date().getFullYear()} DishCare. All rights reserved.
+      </div>
+
+    </footer>
+  );
+}
+
+export default Footer;

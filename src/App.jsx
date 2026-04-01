@@ -1,15 +1,19 @@
 import React from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import Navbar from './component/common/Navbar';
+import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import FridgeServicesPage from './pages/FridgeServicesPage';
 import Dishwasherpage from './pages/Dishwasherpage';
+import Footer from './component/common/Footer';
+import WashineMachinePage from './pages/WashineMachinePage';
+import GasCooker from './pages/GasCooker';
 const MainLayout = () => {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Outlet />
-      <h1>Footer</h1>
+      <Footer/>
     </>
   );
 };
@@ -21,19 +25,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Home</h1>,
+        element: <Home />,
       },
       {
         path: "/about",
-        element: <AboutPage/>,
+        element: <AboutPage />,
       },
       {
         path: "/fridgeservices",
-        element: <FridgeServicesPage/>,
+        element: <FridgeServicesPage />,
       },
       {
         path: "/dishwasherservice",
         element: <Dishwasherpage/>,
+      },
+      {
+        path: "/washing-machineservice",
+        element: <WashineMachinePage/>,
+      },
+      {
+        path: "/gas-cookerservice",
+        element: <GasCooker/>,
       },
     ],
   },
