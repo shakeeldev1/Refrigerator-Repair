@@ -31,12 +31,12 @@ function ElectricStoveAppliaces() {
     {
       title: "Thermostat",
       desc: "Regulates heat levels for precise cooking results.",
-      img: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc",
+      img: "https://i.pinimg.com/1200x/c0/88/44/c08844226ef865017c64bc6566577303.jpg",
     },
     {
       title: "Safety Fuse",
       desc: "Protects the appliance from overheating or electrical faults.",
-      img: "https://images.unsplash.com/photo-1616469829581-73993eb86b02",
+      img: "https://i.pinimg.com/736x/8c/ca/30/8cca30b93faa428a3f58192a6206a5b3.jpg",
     },
   ];
 
