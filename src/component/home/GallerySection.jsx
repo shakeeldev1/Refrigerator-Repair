@@ -58,21 +58,18 @@ export default function GallerySection() {
               Our Gallery
             </div>
             
-            <h2 className="text-2xl md:text-4xl font-extrabold text-[#142A51] mb-6 leading-tight">
-              Highlights of Our <br />
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#142A51] mb-6 leading-tight">
+              Highlights of Our {''}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBB00] to-[#feaa14]">
                 Refrigerator Service Work
               </span>
             </h2>
             
             <p className="text-lg md:flex hidden text-slate-600 font-light leading-relaxed mb-6">
-              Take a look at our recent refrigerator repair and maintenance projects across Dubai. 
-            </p>
-            <p className="text-lg md:flex hidden text-slate-600 font-light leading-relaxed mb-10">
-              From component replacements to complete cooling restorations, our work reflects quality, precision, and reliable service delivery.
+              Take a look at our recent refrigerator repair and maintenance projects across Dubai.From component replacements to complete cooling restorations, our work reflects quality, precision, and reliable service delivery.
             </p>
 
-            <button className="px-8 py-4 md:flex hidden bg-[#142A51] text-white rounded-full font-bold shadow-lg hover:bg-[#0195FF] transition-colors duration-300">
+            <button className="px-4 py-2 md:flex hidden bg-[#142A51] text-white rounded-full cursor-pointer shadow-lg hover:bg-[#0195FF] transition-colors duration-300">
               View Full Gallery
             </button>
           </motion.div>

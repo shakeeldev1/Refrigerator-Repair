@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,8 +10,9 @@ function Footer() {
 
         {/* BRAND */}
         <div>
+          <Link to="/"><img src="/logo.jpeg" alt="" className="h-14 w-14 rounded-md" /></Link>
           <h2 className="text-2xl font-bold text-[#FFBB00] mb-4">
-            DishCare
+            Eco Spin Repair
           </h2>
           <p className="text-gray-300 text-sm leading-relaxed">
             Providing reliable and professional dishwasher repair services with
@@ -33,16 +35,16 @@ function Footer() {
           </h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li className="hover:text-[#FFBB00] cursor-pointer transition">
-              Home
+              <Link to="/">Home</Link>
             </li>
             <li className="hover:text-[#FFBB00] cursor-pointer transition">
-              About Us
+              <Link to="/about">About Us</Link>
             </li>
             <li className="hover:text-[#FFBB00] cursor-pointer transition">
-              Services
+              <Link to="/fridgeservices">Services</Link>
             </li>
             <li className="hover:text-[#FFBB00] cursor-pointer transition">
-              Contact
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -69,13 +71,13 @@ function Footer() {
             Subscribe to get the latest updates and offers.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-col sm:flex-row ">
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-4 py-2 rounded-lg text-black focus:outline-none w-full"
+              className="px-4 py-2  text-white focus:outline-none w-full border-white border "
             />
-            <button className="bg-[#FFBB00] text-[#142A51] px-5 py-2 rounded-lg font-semibold hover:scale-105 transition">
+            <button className="bg-[#FFBB00] text-[#142A51] px-5 py-2 font-semibold hover:scale-105 transition">
               Subscribe
             </button>
           </div>
