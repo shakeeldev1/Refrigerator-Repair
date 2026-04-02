@@ -3,29 +3,38 @@ import { motion } from 'framer-motion';
 
 export default function Quality() {
   return (
-    <section className="relative w-full h-[80vh] flex flex-col justify-center overflow-hidden bg-slate-900">
+    <section className="relative w-full h-[80vh] min-h-[600px] flex flex-col justify-center overflow-hidden bg-slate-900">
       
-      {/* Background Image & Overlay */}
+      {/* Background Video & Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" 
-          alt="Refrigeration Diagnostics" 
-          className="w-full h-full object-cover object-center"
-        />
-        {/* Gradient overlay to ensure text remains highly readable */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#142A51]/95 via-[#142A51]/80 to-transparent" />
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover object-center opacity-80"
+        >
+          {/* Replace this src with your actual video URL */}
+          <source src="/repair.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
+        {/* Gradient overlay to ensure text remains highly readable over the video */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#142A51] via-[#142A51]/80 to-[#142A51]/30 mix-blend-multiply" />
       </div>
 
       {/* Main Hero Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-48">
-        <div className="max-w-3xl">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-16 pb-32">
+        
+        {/* Added a modern glassmorphism container to make the content pop against the moving video */}
+        <div className="max-w-3xl bg-white/5 backdrop-blur-sm border border-white/10 p-8 md:p-12 rounded-[2.5rem] shadow-2xl">
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block text-[#0195FF] font-bold tracking-widest uppercase text-sm mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#0195FF]/20 border border-[#0195FF]/30 text-[#0195FF] font-bold tracking-widest uppercase text-xs mb-6 shadow-sm">
               Quality Cooling Services
             </span>
           </motion.div>
@@ -34,17 +43,17 @@ export default function Quality() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-2xl md:text-4xl  font-extrabold text-white leading-tight mb-6"
+            className="text-3xl font-bold text-white leading-tight mb-2"
           >
-            Dedicated to Keeping Your <br className="hidden md:block" />
-            Cooling Running Smoothly
+            Dedicated to Keeping Your 
+            <span className="text-[#FFBB00]">Cooling Running Smoothly</span>
           </motion.h1>
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-slate-300 font-light leading-relaxed mb-10 max-w-2xl"
+            className="text-base md:text-lg text-slate-200 font-light leading-relaxed mb-3"
           >
             We are committed to delivering reliable refrigerator repair services across Dubai. From gas charging and compressor replacement to resolving frost, fan, and sensor issues, our technicians ensure efficient and long-lasting cooling performance for homes and businesses.
           </motion.p>
@@ -54,7 +63,7 @@ export default function Quality() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <button className="group relative px-8 py-2 bg-[#FFBB00] text-[#142A51] rounded-full font-bold text-lg overflow-hidden shadow-lg hover:shadow-[#FFBB00]/30 transition-all active:scale-95">
+            <button className="group relative px-4 py-2 bg-[#FFBB00] text-[#142A51] rounded-xl cursor-pointer text-lg overflow-hidden shadow-xl hover:shadow-[#FFBB00]/40 transition-all active:scale-95">
               <span className="relative z-10">Contact Us</span>
               <div className="absolute inset-0 bg-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             </button>
@@ -64,7 +73,7 @@ export default function Quality() {
       </div>
 
       {/* Trusted Businesses Band (Glassmorphism Effect) */}
-      <div className="absolute bottom-0 left-0 w-full z-20 bg-[#142A51]/60 backdrop-blur-md border-t border-white/10 py-2">
+      <div className="absolute bottom-0 left-0 w-full z-20 bg-[#142A51]/60 backdrop-blur-md border-t border-white/10 py-4">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12">
           
           <motion.div 
@@ -84,26 +93,24 @@ export default function Quality() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-wrap justify-center md:justify-end items-center gap-8 md:gap-16 w-full"
           >
-            {/* Replace the src attributes below with the actual paths to your logo images. 
-              The grayscale and opacity classes create a clean, uniform look until hovered.
-            */}
+            {/* Replace the src attributes below with the actual paths to your logo images. */}
             <img 
-              src="/path-to-your-logos/alm-logo.png" 
+              src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-2.png" 
               alt="ALM Antillean Airlines" 
               className="h-8 md:h-10 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer" 
             />
             <img 
-              src="/path-to-your-logos/roomz-logo.png" 
+              src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-1.png" 
               alt="Roomz" 
               className="h-6 md:h-8 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer" 
             />
             <img 
-              src="/path-to-your-logos/ufp-logo.png" 
+              src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-4.png" 
               alt="UFP Technologies" 
               className="h-8 md:h-10 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer" 
             />
             <img 
-              src="/path-to-your-logos/parker-games-logo.png" 
+              src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-3.png" 
               alt="Parker Games" 
               className="h-8 md:h-10 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer" 
             />

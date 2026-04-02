@@ -30,19 +30,19 @@ export default function ExpertSection() {
               Certified Technicians
             </div>
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#142A51] mb-6 leading-tight">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#142A51] mb-6 leading-tight">
               Reliable Refrigerator Solutions for <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBB00] to-[#feaa14]">
                 Every Cooling Need
               </span>
             </h2>
             
-            <p className="text-slate-600 text-lg font-light leading-relaxed mb-10">
+            <p className="text-slate-600 text-sm md:text-lg font-light leading-relaxed mb-4">
               We deliver dependable refrigerator repair services across Dubai, helping homes and businesses maintain consistent cooling performance. Our experienced technicians diagnose issues quickly and apply effective solutions from gas charging to component replacements.
             </p>
 
             {/* Feature Checklist */}
-            <div className="grid grid-cols-1 sm:grid-cols-1 gap-5 mb-12 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-1 gap-5 mb-3 w-full">
               {expertPoints.map((point, index) => (
                 <motion.div 
                   key={index}
@@ -50,12 +50,12 @@ export default function ExpertSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + (index * 0.1) }}
-                  className="flex items-center gap-4 group"
+                  className="flex items-center gap-2 group"
                 >
-                  <div className="w-6 h-6 rounded-full bg-[#0195FF] flex items-center justify-center flex-shrink-0 group-hover:bg-[#FFBB00] transition-colors duration-300">
-                    <TbCheck className="text-white" size={14} strokeWidth={4} />
+                  <div className="w-4 h-4 rounded-full bg-[#0195FF] flex items-center justify-center flex-shrink-0 group-hover:bg-[#FFBB00] transition-colors gap-0 duration-300">
+                    <TbCheck className="text-white" size={12} strokeWidth={4} />
                   </div>
-                  <span className="text-[#142A51] font-bold text-base md:text-lg">
+                  <span className="text-[#142A51] text-base">
                     {point}
                   </span>
                 </motion.div>
@@ -63,7 +63,7 @@ export default function ExpertSection() {
             </div>
 
             {/* Action Button */}
-            <button className="group relative px-10 py-5 bg-[#142A51] text-white rounded-full font-bold text-lg overflow-hidden shadow-xl hover:shadow-[#0195FF]/30 transition-all active:scale-95">
+            <button className="group relative px-4 py-2 bg-[#142A51] text-white rounded-full  cursor-pointer text-lg overflow-hidden shadow-xl hover:shadow-[#0195FF]/30 transition-all active:scale-95">
               <span className="relative z-10">Explore More</span>
               <div className="absolute inset-0 bg-[#0195FF] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             </button>
@@ -117,10 +117,10 @@ export default function ExpertSection() {
                 whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
-                className="absolute -bottom-6 -left-6 md:-left-10 bg-[#142A51] p-6 md:p-8 rounded-3xl shadow-2xl border-b-[6px] border-[#FFBB00] text-center z-20"
+                className="absolute -bottom-6 -left-6 md:-left-10 bg-[#142A51] p-4 rounded-md shadow-2xl border-b-[6px] border-[#FFBB00] text-center z-20"
               >
-                <div className="text-[#FFBB00] text-4xl md:text-5xl font-black mb-1">15+</div>
-                <div className="text-white text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold leading-tight">
+                <div className="text-[#FFBB00] text-xl mb-1">15+</div>
+                <div className="text-white text-[10px]  tracking-[0.2em] font-semibold leading-tight">
                   Years of <br /> Excellence
                 </div>
               </motion.div>

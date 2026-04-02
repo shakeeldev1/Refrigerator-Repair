@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
-import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import FridgeServicesPage from './pages/FridgeServicesPage';
 import Dishwasherpage from './pages/Dishwasherpage';
@@ -8,11 +7,17 @@ import WashineMachinePage from './pages/WashineMachinePage';
 import GasCooker from './pages/GasCooker';
 import Navbar from './component/common/Navbar';
 import Footer from './component/common/Footer';
+import Home from './pages/Home';
+import ContactUs from './component/home/ContactUs';
+import Blogs from './pages/Blogs';
+import BlogDetail from './component/Blogs/BlogDetail';
+import ScrollToTop from './pages/ScrollToTop';
 import GasStovePage from './pages/GasStovePage';
 const MainLayout = () => {
   return (
     <>
       <Navbar />
+      <ScrollToTop/>
       <Outlet />
       <Footer/>
     </>
@@ -47,6 +52,18 @@ const router = createBrowserRouter([
       {
         path: "/gas-cookerservice",
         element: <GasCooker/>,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs/>,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs/>,
+      },
+      {
+        path: "/blogs/:slug",
+        element: <BlogDetail/>,
       },
       {
         path: "/electric-stoveservice",

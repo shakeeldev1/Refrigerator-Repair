@@ -73,34 +73,31 @@ export default function Repairinghub() {
     <section className="py-10 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
-        {/* Header Section */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-1 gap-6">
-          <div className="max-w-2xl">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="text-[#0195FF] font-bold uppercase tracking-widest text-sm mb-3"
-            >
-              Our Expertise
-            </motion.div>
-            <motion.h2 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-[#142A51] leading-tight"
-            >
-              Affordable <span className="text-[#FFBB00]">Cooling Solutions</span> <br className="hidden lg:block" />
-              for Every Situation
-            </motion.h2>
-          </div>
-          
-          <motion.p 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+        {/* Header Section - Centered */}
+        <div className="text-center mb-12">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-slate-500 max-w-sm text-lg font-light leading-relaxed"
+            className="text-[#0195FF] font-bold uppercase tracking-widest text-sm mb-3"
+          >
+            Our Expertise
+          </motion.div>
+          <motion.h2 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#142A51] leading-tight"
+          >
+            Affordable <span className="text-[#FFBB00]">Cooling Solutions</span>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-slate-500 max-w-2xl mx-auto mt-4 text-base md:text-lg font-light leading-relaxed"
           >
             We provide complete refrigerator and appliance repair across Dubai, ensuring 24/7 performance for your home.
           </motion.p>
@@ -119,29 +116,29 @@ export default function Repairinghub() {
               key={service.id}
               variants={itemVariants}
               whileHover={{ y: -8 }}
-              className="group relative p-8 rounded-3xl bg-slate-50 border border-slate-100 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:shadow-[#142A51]/5"
+              className="group relative p-8 rounded-3xl bg-[#142A51] border border-[#142A51]/20 transition-all duration-300 hover:bg-[#142A51] hover:shadow-2xl hover:shadow-[#0195FF]/10"
             >
               {/* Icon & Decorative Background */}
               <div className="relative mb-8 inline-block">
                 <div 
-                  className="w-16 h-16 rounded-2xl flex items-center justify-center text-white transition-transform duration-500 group-hover:rotate-[360deg]"
-                  style={{ backgroundColor: '#142A51' }}
+                  className="w-16 h-16 rounded-2xl flex items-center justify-center transition-transform duration-500 "
+                  style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
                 >
                   <service.icon size={32} strokeWidth={1.5} style={{ color: service.color }} />
                 </div>
-                <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-[#142A51]/5 rounded-2xl -z-10" />
+                <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-[#0195FF]/10 rounded-2xl -z-10" />
               </div>
 
               {/* Text Content */}
-              <h3 className="text-2xl font-bold text-[#142A51] mb-4 group-hover:text-[#0195FF] transition-colors">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#FFBB00] transition-colors">
                 {service.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed font-light mb-8">
+              <p className="text-white/70 leading-relaxed font-light mb-8">
                 {service.description}
               </p>
 
               {/* "Learn More" Link */}
-              <div className="flex items-center gap-2 text-[#142A51] font-bold text-sm uppercase tracking-wider group-hover:text-[#FFBB00] transition-colors cursor-pointer">
+              <div className="flex items-center gap-2 text-[#FFBB00] font-bold text-sm uppercase tracking-wider group-hover:text-[#0195FF] transition-colors cursor-pointer">
                 Learn More 
                 <TbArrowRight className="group-hover:translate-x-2 transition-transform" />
               </div>
@@ -154,7 +151,6 @@ export default function Repairinghub() {
             </motion.div>
           ))}
         </motion.div>
-
 
       </div>
     </section>

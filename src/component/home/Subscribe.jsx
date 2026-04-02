@@ -17,7 +17,7 @@ export default function Subscribe() {
         
         >
         {/* Deep blue gradient overlay for professional look and text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#142A51]/95 via-[#0195FF]/80 to-[#142A51]/60 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#142A51]/50 via-[#0195FF]/80 to-[#142A51]/60 mix-blend-multiply" />
         
         {/* Glowing energetic light flares */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#0195FF]/40 rounded-full blur-[120px] pointer-events-none" />
@@ -33,7 +33,7 @@ export default function Subscribe() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-full lg:w-3/5 p-8 md:p-12 bg-white/10 backdrop-blur-xl border border-white/20 rounded-[2rem] shadow-2xl shadow-black/30 relative overflow-hidden"
+          className="w-full lg:w-3/5 p-8 md:p-12 bg-white/10 backdrop-blur border border-white/20 rounded-[2rem] shadow-2xl shadow-black/30 relative overflow-hidden"
         >
           {/* Decorative corner accent */}
           <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#FFBB00] rounded-full blur-2xl opacity-50" />
