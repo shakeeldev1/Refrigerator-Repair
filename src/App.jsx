@@ -8,6 +8,7 @@ import WashineMachinePage from './pages/WashineMachinePage';
 import GasCooker from './pages/GasCooker';
 import Navbar from './component/common/Navbar';
 import Footer from './component/common/Footer';
+import GasStovePage from './pages/GasStovePage';
 const MainLayout = () => {
   return (
     <>
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/gas-cookerservice",
         element: <GasCooker/>,
+      },
+      {
+        path: "/electric-stoveservice",
+        element: <GasStovePage/>,
       },
     ],
   },
