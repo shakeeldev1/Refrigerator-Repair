@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TbCheck } from 'react-icons/tb';
+import { TbCheck, TbPhone } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
 
 const expertPoints = [
   "Affordable repair services for residential & commercial needs",
@@ -12,119 +13,99 @@ const expertPoints = [
 
 export default function ExpertSection() {
   return (
-    <section className="py-10  bg-white overflow-hidden">
+    <section className="py-10 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
           {/* LEFT COLUMN: Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.6 }}
             className="flex flex-col items-start"
           >
-            {/* Small Badge Header */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0195FF]/5 border border-[#0195FF]/10 text-[#0195FF] font-bold text-xs uppercase tracking-widest mb-8">
-              <span className="w-2 h-2 rounded-full bg-[#0195FF] animate-pulse"></span>
-              Certified Technicians
-            </div>
-            
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#142A51] mb-6 leading-tight">
-              Reliable Refrigerator Solutions for <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBB00] to-[#feaa14]">
+            <h2 className="text-2xl md:text-4xl font-bold text-[#142A51] mb-4 leading-tight">
+              Reliable Refrigerator Solutions for{' '}
+              <span className="text-[#FFBB00]">
                 Every Cooling Need
               </span>
             </h2>
-            
-            <p className="text-slate-600 text-sm md:text-lg font-light leading-relaxed mb-4">
+
+            <div className="w-16 h-1 bg-[#0195FF] rounded-full mb-6" />
+
+            <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-8">
               We deliver dependable refrigerator repair services across Dubai, helping homes and businesses maintain consistent cooling performance. Our experienced technicians diagnose issues quickly and apply effective solutions from gas charging to component replacements.
             </p>
 
-            {/* Feature Checklist */}
-            <div className="grid grid-cols-1 sm:grid-cols-1 gap-5 mb-3 w-full">
+            {/* Clean Feature List */}
+            <div className="space-y-4 mb-10 w-full">
               {expertPoints.map((point, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.3 + (index * 0.1) }}
-                  className="flex items-center gap-2 group"
+                  transition={{ delay: 0.1 + (index * 0.08) }}
+                  className="flex items-start gap-3"
                 >
-                  <div className="w-4 h-4 rounded-full bg-[#0195FF] flex items-center justify-center flex-shrink-0 group-hover:bg-[#FFBB00] transition-colors gap-0 duration-300">
-                    <TbCheck className="text-white" size={12} strokeWidth={4} />
+                  <div className="mt-0.5">
+                    <TbCheck className="text-[#0195FF] text-xl" strokeWidth={2.5} />
                   </div>
-                  <span className="text-[#142A51] text-base">
+                  <span className="text-[#142A51] text-base leading-relaxed">
                     {point}
                   </span>
                 </motion.div>
               ))}
             </div>
 
-            {/* Action Button */}
-            <button className="group relative px-4 py-2 bg-[#142A51] text-white rounded-full  cursor-pointer text-lg overflow-hidden shadow-xl hover:shadow-[#0195FF]/30 transition-all active:scale-95">
-              <span className="relative z-10">Explore More</span>
-              <div className="absolute inset-0 bg-[#0195FF] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            </button>
+            {/* CTA Button */}
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
+              <Link to='/contact' >
+                <button className="px-8 py-3 bg-[#142A51] text-white rounded-full font-semibold hover:bg-[#0195FF] transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer">
+                  Explore More
+                </button>
+              </Link>
+
+
+            </div>
           </motion.div>
 
-          {/* RIGHT COLUMN: 3-Image Layout with Experience Badge */}
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
+          {/* RIGHT COLUMN: Image with Hover Effect */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative w-full h-[450px] md:h-[600px]"
+            transition={{ duration: 0.6 }}
+            className="relative"
           >
-            {/* Design Accents behind images */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#0195FF]/5 rounded-full blur-3xl -z-10" />
-            <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-[#FFBB00]/10 rounded-full blur-3xl -z-10" />
-            
-            {/* 3-Image Grid */}
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full h-full relative z-0">
-              
-              {/* Image 1: Tall (Left) */}
-              <div className="row-span-2 col-span-1 rounded-[2rem] overflow-hidden shadow-lg border-[6px] border-slate-50 group">
-                <img 
-                  src="http://img.freepik.com/premium-photo/service-man-adjusting-house-heating-system_926199-3560224.jpg?w=740" 
-                  alt="Certified Appliance Technician" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
+            {/* Main Image with Hover Effect */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src="http://img.freepik.com/premium-photo/service-man-adjusting-house-heating-system_926199-3560224.jpg?w=740"
+                alt="Certified Appliance Technician"
+                className="w-full h-[500px] object-cover transition-transform duration-500 hover:scale-110"
+              />
 
-              {/* Image 2: Top Right */}
-              <div className="row-span-1 col-span-1 rounded-[2rem] overflow-hidden shadow-lg border-[6px] border-slate-50 group">
-                <img 
-                  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=740&auto=format&fit=crop" 
-                  alt="Technician Tools" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-
-              {/* Image 3: Bottom Right */}
-              <div className="row-span-1 col-span-1 rounded-[2rem] overflow-hidden shadow-lg border-[6px] border-slate-50 group">
-                <img 
-                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=740&auto=format&fit=crop" 
-                  alt="Refrigeration Unit" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-
-              {/* Overlay Experience Badge (Moved to bottom left to contrast with the tall image) */}
-              <motion.div 
-                initial={{ scale: 0.8, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5 }}
-                className="absolute -bottom-6 -left-6 md:-left-10 bg-[#142A51] p-4 rounded-md shadow-2xl border-b-[6px] border-[#FFBB00] text-center z-20"
-              >
-                <div className="text-[#FFBB00] text-xl mb-1">15+</div>
-                <div className="text-white text-[10px]  tracking-[0.2em] font-semibold leading-tight">
-                  Years of <br /> Excellence
+              {/* Simple Stats Overlay */}
+              <div className="absolute bottom-0 left-0 right-0 bg-[#142A51]/90 backdrop-blur-sm p-4">
+                <div className="flex justify-around">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-[#FFBB00]">500+</div>
+                    <div className="text-xs text-white/80">Happy Clients</div>
+                  </div>
+                  <div className="w-px h-8 bg-white/20" />
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-[#FFBB00]">98%</div>
+                    <div className="text-xs text-white/80">Satisfaction</div>
+                  </div>
+                  <div className="w-px h-8 bg-white/20" />
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-[#FFBB00]">30min</div>
+                    <div className="text-xs text-white/80">Response Time</div>
+                  </div>
                 </div>
-              </motion.div>
-              
+              </div>
             </div>
           </motion.div>
 
