@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function GasCookerHero() {
   const slides = [
@@ -81,16 +82,23 @@ function GasCookerHero() {
               {slides[current].stats.map((item, i) => (
                 <span
                   key={i}
-                  className="bg-white/10 px-3 py-2 sm:px-4 rounded-lg">
+                  className="bg-white/10 px-3 py-2 sm:px-4 rounded-lg"
+                >
                   {item}
                 </span>
               ))}
             </div>
 
-            {/* BUTTON */}
-            <button className="mt-6 md:mt-8 cursor-pointer bg-[#FFBB00] text-[#142A51] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:scale-105 transition">
-              Explore Service
-            </button>
+            {/* ✅ BUTTON (FIXED SPACING) */}
+            <div className="mt-8 flex justify-center md:justify-start">
+              <Link
+                to="/contact"
+                className="bg-[#FFBB00] text-[#142A51] px-6 sm:px-7 py-3 rounded-lg font-semibold hover:scale-105 transition duration-300"
+              >
+                Contact
+              </Link>
+            </div>
+
           </div>
 
           {/* RIGHT CARD */}

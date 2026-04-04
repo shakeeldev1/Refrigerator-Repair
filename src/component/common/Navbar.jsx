@@ -111,7 +111,9 @@ function Navbar() {
           {/* CALL BUTTON (DESKTOP) */}
           <div className="hidden md:flex items-center gap-2 bg-[#FFBB00] text-[#142A51] px-6 py-2.5 rounded-full font-bold cursor-pointer hover:shadow-lg hover:shadow-[#FFBB00]/30 transition-all duration-300">
             <FaPhoneAlt size={14} />
-            <span>Call Now</span>
+            <a href="https://wa.me/971529820114" target="_blank" rel="noopener noreferrer">
+              Call Now
+            </a>
           </div>
 
           {/* MOBILE TOGGLE BUTTON */}

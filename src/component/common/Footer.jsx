@@ -75,7 +75,7 @@ function Footer() {
               📍 Musaffah M10, Abu Dhabi
             </li>
             <li>
-              📞 <a href="tel:+971529820114" className="hover:text-[#FFBB00]">+971 52 982 0114</a>
+              📞  <a href="https://wa.me/971529820114" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFBB00]">+971 52 982 0114</a>
             </li>
             <li>
               ✉️ <a href="mailto:support@ecospinrepair.com" className="hover:text-[#FFBB00]">support@ecospinrepair.com</a>

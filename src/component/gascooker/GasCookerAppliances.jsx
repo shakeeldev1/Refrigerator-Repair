@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function GasCookerAppliances() {
   const appliances = [
@@ -61,10 +62,10 @@ function GasCookerAppliances() {
         </p>
       </div>
 
-      {/* MAIN CAROUSEL SECTION */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      {/* MAIN CONTENT */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        {/* LEFT IMAGE CAROUSEL */}
+        {/* LEFT IMAGE */}
         <div className="relative h-[300px] md:h-[450px]" data-aos="fade-right">
           {appliances.map((item, index) => (
             <img
@@ -73,38 +74,48 @@ function GasCookerAppliances() {
               alt={item.title}
               className={`absolute w-full h-full object-cover rounded-2xl shadow-xl transition-all duration-1000 ${
                 index === current
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 -translate-x-10"
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-95"
               }`}
             />
           ))}
         </div>
 
-        {/* RIGHT CONTENT CAROUSEL */}
-        <div className="relative h-[250px] md:h-[350px] flex items-center" data-aos="fade-left">
+        {/* RIGHT CONTENT */}
+        <div className="flex flex-col justify-center" data-aos="fade-left">
 
-          {appliances.map((item, index) => (
-            <div
-              key={index}
-              className={`absolute transition-all duration-700 ${
-                index === current
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 translate-x-10"
-              }`}
+          <div className="relative h-[220px] md:h-[260px]">
+
+            {appliances.map((item, index) => (
+              <div
+                key={index}
+                className={`absolute transition-all duration-700 ${
+                  index === current
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 translate-x-10"
+                }`}
+              >
+                <h3 className="text-2xl md:text-4xl font-bold text-[#142A51] mb-4">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-md">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+
+          </div>
+
+          {/* CONTACT BUTTON (PROPERLY BELOW CONTENT) */}
+          <div className="-mt-4">
+            <Link
+              to="/contact"
+              className="inline-block bg-[#FFBB00] text-[#142A51] px-6 py-3 rounded-lg font-semibold hover:scale-105 transition shadow-md"
             >
-              <h3 className="text-2xl md:text-4xl font-bold text-[#142A51] mb-4">
-                {item.title}
-              </h3>
-
-              <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-md">
-                {item.desc}
-              </p>
-
-              <button className="mt-6 bg-[#FFBB00] text-[#142A51] px-6 py-2 rounded-lg font-semibold hover:scale-105 transition">
-                Contct Us
-              </button>
-            </div>
-          ))}
+              Contact Us
+            </Link>
+          </div>
 
         </div>
 

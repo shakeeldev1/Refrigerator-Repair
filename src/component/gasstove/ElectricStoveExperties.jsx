@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function ElectricStoveExperties() {
 
@@ -76,9 +77,9 @@ function ElectricStoveExperties() {
           </div>
 
           {/* CTA */}
-          <button className="mt-6 bg-[#142A51] text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
-            Explore Services
-          </button>
+          <Link to="/contact" className="mt-6 bg-[#142A51] text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
+            Get Services Now
+          </Link>
 
         </div>
 

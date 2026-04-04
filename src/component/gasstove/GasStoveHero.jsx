@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function GasStoveHero() {
   useEffect(() => {
@@ -64,10 +65,11 @@ function GasStoveHero() {
           </div>
 
           {/* BUTTON */}
-          <button className="mt-8 bg-[#FFBB00] text-[#142A51] px-6 py-3 rounded-xl font-semibold hover:scale-105 transition shadow-lg">
+          <div className="mt-8">
+          <Link to='/contact' className="mt-8 bg-[#FFBB00] text-[#142A51] px-6 py-3 rounded-xl font-semibold hover:scale-105 transition shadow-lg">
             Get Service Now
-          </button>
-
+          </Link>
+</div>
         </div>
 
         {/* RIGHT SIDE VISUAL */}

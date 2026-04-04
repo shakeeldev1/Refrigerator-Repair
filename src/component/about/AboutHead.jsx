@@ -2,7 +2,7 @@ import React from "react";
 function AboutHead() {
   return (
     <div
-      className="w-full min-h-[100%] flex items-center justify-center px-6 md:px-16 py-12 bg-[#142A51] relative"
+      className="w-full min-h-[100%] h-[100vh] flex items-center justify-center px-6 md:px-16 py-12 bg-[#142A51] relative"
       style={{
         backgroundImage:
           "url('https://i.pinimg.com/736x/28/97/73/2897732b0e09a34ed7bd7fe2fa2d5b33.jpg')",
