@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function ContactHeader() {
   return (
-    <div className="relative w-full h-[40vh] min-h-[300px] flex flex-col justify-center items-center overflow-hidden bg-[#142A51]">
+    <div className="relative w-full h-[40vh] min-h-[400px] flex flex-col justify-center items-center overflow-hidden bg-[#142A51]">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img 

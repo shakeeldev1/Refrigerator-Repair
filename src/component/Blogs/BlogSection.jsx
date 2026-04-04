@@ -22,7 +22,7 @@ export default function BlogSection() {
     <div className="bg-slate-50 min-h-screen pb-20">
       
       {/* 1. Header Section with Background Image */}
-      <section className="relative w-full h-[40vh] min-h-[350px] flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+      <section className="relative w-full h-[40vh] min-h-[400px] flex flex-col justify-center items-center text-center px-6 overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <img 

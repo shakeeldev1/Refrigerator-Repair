@@ -28,14 +28,14 @@ export default function Quality() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-16 pb-32">
 
         {/* Added a modern glassmorphism container to make the content pop against the moving video */}
-        <div className="max-w-3xl bg-white/5 backdrop-blur-sm border border-white/10 p-8 md:p-12 rounded-[2.5rem] shadow-2xl">
+        <div className="w-full md:max-w-3xl bg-white/5 backdrop-blur-sm border border-white/10 p-4 md:p-12 rounded-md md:rounded-[2.5rem] shadow-2xl">
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[#0195FF]/20 border border-[#0195FF]/30 text-[#0195FF] font-bold tracking-widest uppercase text-xs mb-6 shadow-sm">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#0195FF]/20 border border-[#0195FF]/30 text-[#0195FF] font-bold tracking-widest uppercase text-xs md:mb-6 mb-2 shadow-sm">
               Quality Cooling Services
             </span>
           </motion.div>
@@ -44,9 +44,9 @@ export default function Quality() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl font-bold text-white leading-tight mb-2"
+            className="text-xl md:text-3xl font-bold text-white leading-tight md:mb-2"
           >
-            Dedicated to Keeping Your
+            Dedicated to Keeping Your {''}
             <span className="text-[#FFBB00]">Cooling Running Smoothly</span>
           </motion.h1>
 
@@ -54,7 +54,7 @@ export default function Quality() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base md:text-lg text-slate-200 font-light leading-relaxed mb-3"
+            className="text-sm md:text-lg text-slate-200 font-light leading-relaxed mb-2 mt-2"
           >
             We are committed to delivering reliable refrigerator repair services across Dubai. From gas charging and compressor replacement to resolving frost, fan, and sensor issues, our technicians ensure efficient and long-lasting cooling performance for homes and businesses.
           </motion.p>
@@ -65,7 +65,7 @@ export default function Quality() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link to='/contact'>
-              <button className="group relative px-4 py-2 bg-[#FFBB00] text-[#142A51] rounded-xl cursor-pointer text-lg overflow-hidden shadow-xl hover:shadow-[#FFBB00]/40 transition-all active:scale-95">
+              <button className="group relative px-2 py-1 rounded-md md:px-4 md:py-2 bg-[#FFBB00] text-[#142A51] md:rounded-xl cursor-pointer text-lg overflow-hidden shadow-xl hover:shadow-[#FFBB00]/40 transition-all active:scale-95">
                 <span className="relative z-10">Contact Us</span>
                 <div className="absolute inset-0 bg-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
               </button>
@@ -100,7 +100,7 @@ export default function Quality() {
             <img
               src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-2.png"
               alt="ALM Antillean Airlines"
-              className="h-8 md:h-10 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
+              className="h-6 md:h-10 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
             />
             <img
               src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-1.png"
@@ -110,12 +110,12 @@ export default function Quality() {
             <img
               src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-4.png"
               alt="UFP Technologies"
-              className="h-8 md:h-10 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
+              className="h-6 md:h-8 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
             />
             <img
               src="https://therepairinghub.com/wp-content/uploads/2024/11/Companies-Logo-3.png"
               alt="Parker Games"
-              className="h-8 md:h-10 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
+              className="h-6 md:h-8 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
             />
           </motion.div>
 

@@ -82,9 +82,9 @@ export default function ExpertSection() {
             {/* Main Image with Hover Effect */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="http://img.freepik.com/premium-photo/service-man-adjusting-house-heating-system_926199-3560224.jpg?w=740"
+                src="https://img.freepik.com/premium-photo/male-technician-uniform-reprs-broken-refrigerator-kitchen_926199-4197168.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80"
                 alt="Certified Appliance Technician"
-                className="w-full h-[500px] object-cover transition-transform duration-500 hover:scale-110"
+                className="w-full h-[300px] md:h-[500px] object-cover transition-transform duration-500 hover:scale-110"
               />
 
               {/* Simple Stats Overlay */}

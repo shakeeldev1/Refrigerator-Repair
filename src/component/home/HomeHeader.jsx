@@ -9,7 +9,7 @@ const slides = [
     title: "24/7 Expert Appliance &",
     highlightedText: "Refrigerator Repair",
     description: "Fast, reliable, and affordable repair services for your home and business. From specialized fridge cooling solutions to complete kitchen appliance care, our certified technicians are ready to restore your comfort.",
-    image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=2070&auto=format&fit=crop",
+    image: "https://img.freepik.com/premium-photo/serviceman-repairing-refrigerator_1016675-846.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
     icon: TbFridge,
     badge: "Emergency Response",
     buttonText: "Call Now",
@@ -19,7 +19,7 @@ const slides = [
     title: "Professional Washing Machine",
     highlightedText: "Repair Services",
     description: "Is your washing machine making strange noises or not spinning? Our experts diagnose and fix all major brands with same-day service. Get your laundry back on track today!",
-    image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?q=80&w=2071&auto=format&fit=crop",
+    image: "https://img.freepik.com/premium-photo/practical-home-maintenance-professional-worker-repairing-household-washing-machine_257123-47445.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
     icon: TbWashMachine,
     badge: "Same Day Service",
     buttonText: "Book Now",
@@ -29,7 +29,7 @@ const slides = [
     title: "Premium Oven & Cooktop",
     highlightedText: "Repair Experts",
     description: "Don't let a broken oven ruin your cooking plans. Our certified technicians repair all major brands with genuine parts. 90-day warranty on all repairs.",
-    image: "https://images.unsplash.com/photo-1584999734482-0361aecad844?q=80&w=2070&auto=format&fit=crop",
+    image: "https://img.freepik.com/free-photo/blogger-recording-cooking-show_23-2148349475.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
     icon: TbMicrowave,
     badge: "Certified Technicians",
     buttonText: "Get Quote",
@@ -39,7 +39,7 @@ const slides = [
     title: "AC Installation &",
     highlightedText: "Repair Services",
     description: "Stay cool all year round with our professional AC maintenance and repair services. Free inspection with every repair call. Energy-efficient solutions available.",
-    image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070&auto=format&fit=crop",
+    image: "https://img.freepik.com/free-photo/wireman-dissasembling-air-conditioner_482257-91015.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
     icon: TbAirConditioning,
     badge: "24/7 Support",
     buttonText: "Call Us",
@@ -134,11 +134,11 @@ export default function HomeHeader() {
 
             {/* Centered Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center  sm:w-auto">
-              <button className="w-full sm:w-auto bg-[#FFBB00] hover:bg-[#feaa14] text-[#142A51] font-bold  px-4 md:px-8 py-2 rounded-full flex items-center justify-center gap-3 transition-colors shadow-lg shadow-[#FFBB00]/20 text-lg">
+              <button className="w-full sm:w-auto bg-[#FFBB00] hover:bg-[#feaa14] text-[#142A51] md:font-bold  px-2 md:px-8 py-2 rounded-full flex items-center justify-center gap-3 transition-colors shadow-lg shadow-[#FFBB00]/20 text-lg">
                 <FaPhoneAlt />
                 {currentSlide.buttonText}
               </button>
-              <button className="w-full sm:w-auto border-2 border-white/30 hover:border-white hover:bg-white/10 text-white font-semibold  px-4 md:px-5 py-2 rounded-full flex items-center justify-center gap-3 transition-colors text-lg">
+              <button className="w-full sm:w-auto border-2 border-white/30 hover:border-white hover:bg-white/10 text-white md:font-semibold  px-4 md:px-5 py-2 rounded-full flex items-center justify-center gap-3 transition-colors text-lg">
                 <FaWhatsapp size={22} />
                 WhatsApp Us
               </button>

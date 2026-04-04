@@ -95,7 +95,7 @@ export default function GallerySection() {
                 <div className="flex flex-col gap-4 animate-scroll-up pt-4">
                   {/* Duplicated images to create seamless infinite loop */}
                   {[...col1Images, ...col1Images].map((img, index) => (
-                    <div key={`up-${index}`} className="w-full h-[250px] rounded-2xl overflow-hidden shrink-0 shadow-md">
+                    <div key={`up-${index}`} className="w-full h-[200px] md:h-[250px] rounded-2xl overflow-hidden shrink-0 shadow-md">
                       <img 
                         src={img} 
                         alt="Service Gallery" 
@@ -112,11 +112,11 @@ export default function GallerySection() {
                 <div className="flex flex-col gap-4 animate-scroll-down absolute top-0 w-full">
                   {/* Duplicated images to create seamless infinite loop */}
                   {[...col2Images, ...col2Images].map((img, index) => (
-                    <div key={`down-${index}`} className="w-full h-[250px] rounded-2xl overflow-hidden shrink-0 shadow-md">
+                    <div key={`down-${index}`} className="w-full h-[200px]md:h-[250px] rounded-2xl overflow-hidden shrink-0 shadow-md">
                       <img 
                         src={img} 
                         alt="Service Gallery" 
-                        className="w-full h-full object-cover"
+                        className="w-full md:h-full object-cover"
                       />
                     </div>
                   ))}

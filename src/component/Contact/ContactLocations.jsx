@@ -25,7 +25,7 @@ const locations = [
 
 export default function ContactLocations() {
   return (
-    <section className="pb-10 bg-slate-50 relative px-6">
+    <section className="pb-10 py-10 bg-slate-50 relative px-6">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
 

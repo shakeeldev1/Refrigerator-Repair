@@ -10,7 +10,9 @@ function Footer() {
 
         {/* BRAND */}
         <div>
-          <Link to="/"><img src="/logo.jpeg" alt="" className="h-14 w-14 rounded-md" /></Link>
+          <Link to="/">
+            <img src="/logo.jpeg" alt="logo" className="h-14 w-14 rounded-md" />
+          </Link>
           <h2 className="text-2xl font-bold text-[#FFBB00] mb-4">
             Eco Spin Repair
           </h2>
@@ -34,16 +36,16 @@ function Footer() {
             Quick Links
           </h3>
           <ul className="space-y-2 text-gray-300 text-sm">
-            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+            <li className="hover:text-[#FFBB00] transition">
               <Link to="/">Home</Link>
             </li>
-            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+            <li className="hover:text-[#FFBB00] transition">
               <Link to="/about">About Us</Link>
             </li>
-            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+            <li className="hover:text-[#FFBB00] transition">
               <Link to="/fridgeservices">Services</Link>
             </li>
-            <li className="hover:text-[#FFBB00] cursor-pointer transition">
+            <li className="hover:text-[#FFBB00] transition">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -62,25 +64,36 @@ function Footer() {
           </ul>
         </div>
 
-        {/* NEWSLETTER */}
+        {/* CONTACT & LOCATION */}
         <div>
           <h3 className="text-lg font-semibold text-[#FFBB00] mb-4">
-            Newsletter
+            Contact & Location
           </h3>
-          <p className="text-gray-300 text-sm mb-4">
-            Subscribe to get the latest updates and offers.
-          </p>
 
-          <div className="flex flex-col sm:flex-row ">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="px-4 py-2  text-white focus:outline-none w-full border-white border "
-            />
-            <button className="bg-[#FFBB00] text-[#142A51] px-1 py-2  hover:scale-105 transition">
-              Subscribe
-            </button>
-          </div>
+          <ul className="space-y-2 text-gray-300 text-sm">
+            <li>
+              📍 Musaffah M10, Abu Dhabi
+            </li>
+            <li>
+              📞 <a href="tel:+971529820114" className="hover:text-[#FFBB00]">+971 52 982 0114</a>
+            </li>
+            <li>
+              ✉️ <a href="mailto:support@ecospinrepair.com" className="hover:text-[#FFBB00]">support@ecospinrepair.com</a>
+            </li>
+            <li>
+              🕒 24/7 Available
+            </li>
+            <li>
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#FFBB00] hover:underline"
+              >
+                View on Map
+              </a>
+            </li>
+          </ul>
         </div>
 
       </div>
