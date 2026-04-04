@@ -26,7 +26,7 @@ export default function BlogSection() {
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2070&auto=format&fit=crop" 
+            src="https://img.freepik.com/free-photo/side-view-woman-looking-fridge_23-2149857565.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80" 
             alt="Blog Header" 
             className="w-full h-full object-cover"
           />

@@ -119,7 +119,7 @@ export default function PremiumService() {
           >
             {/* Popular Tag */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-20">
-              <div className="bg-[#FFBB00] text-[#142A51] px-6 py-1.5 rounded-full text-sm font-bold shadow-lg flex items-center gap-2">
+              <div className="bg-[#FFBB00] text-[#142A51] px-6 py-1.5 rounded-full text-[10px] md:text-sm font-bold shadow-lg flex items-center gap-1 md:gap-2">
                 <TbUserCheck className="text-sm" />
                 Most Popular Choice
               </div>

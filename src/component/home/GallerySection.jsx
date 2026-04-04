@@ -3,17 +3,17 @@ import { motion } from 'framer-motion';
 
 // Sample images for the gallery (replace with your actual project photos)
 const col1Images = [
-  "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=600&auto=format&fit=crop",
+  "https://img.freepik.com/premium-photo/male-technician-uniform-reprs-broken-refrigerator-kitchen_926199-4197168.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
+  "https://img.freepik.com/premium-photo/repr-r-conditioner-technician-workwear-profession-appliance_1368762-3250.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
+  "https://img.freepik.com/free-photo/diagnostics-equipment-profile-serious-man-ooking-open-dishwasher-kitchen_259150-58280.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
+  "https://img.freepik.com/premium-photo/repr-r-conditioner-technician-workwear-profession-appliance_1368762-12042.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
 ];
 
 const col2Images = [
-  "https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=600&auto=format&fit=crop",
+  "https://img.freepik.com/free-photo/electrician-using-tablet-digital-panel-control-electrical-system-analysis_169016-68336.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
+  "https://img.freepik.com/premium-photo/young-man-working-as-electrician-exposing-back-fridge-check-repair-it_926199-3957343.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
+  "https://img.freepik.com/premium-photo/young-professional-worker-installing-new-stylish-modern-kitchen-furniture_530697-75224.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
+  "https://img.freepik.com/premium-photo/should-be-attantive-senior-male-technician-checking-refrigerator_386167-8195.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
 ];
 
 export default function GallerySection() {
