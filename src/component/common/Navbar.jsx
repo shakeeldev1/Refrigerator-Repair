@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/images/refrigirator-log.jpeg"
 
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -65,7 +66,7 @@ function Navbar() {
           {/* LOGO */}
           <div className="text-[#FFBB00] font-bold text-lg z-50">
             <Link to="/">
-              <img src="/logo.jpeg" alt="Logo" className="h-[100%] w-12 rounded-md" />
+              <img src={logo} alt="Logo" className="h-[100%] w-12 rounded-md" />
             </Link>
           </div>
 
