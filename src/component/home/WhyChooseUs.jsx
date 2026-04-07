@@ -141,7 +141,7 @@ export default function WhyChooseUs() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl font-bold text-[#142A51] mb-4"
           >
-            Why Dubai Trusts{' '}
+            Why Community Trusts{' '}
             <span className="text-[#FFBB00]">The Repairing Hub</span>
           </motion.h2>
           

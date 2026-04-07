@@ -36,8 +36,7 @@ export default function ContactHeader() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-slate-300 max-w-2xl mx-auto text-lg font-light"
-        >
+          className="text-slate-300 max-w-2xl mx-auto text-lg font-light">
           Get in touch with our refrigerator repair team in Dubai for fast assistance. Whether you need emergency service, maintenance, or technical support, we are ready to help.
         </motion.p>
       </div>

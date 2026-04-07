@@ -88,7 +88,6 @@ export default function PremiumService() {
                   { text: "Fan Motor Service", highlight: false },
                   { text: "Basic Gas Charging", highlight: false },
                   { text: "Routine Maintenance", highlight: false },
-                  { text: "30-Day Service Warranty", highlight: true }
                 ].map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <TbCheck className={`text-lg mt-0.5 ${feature.highlight ? 'text-[#FFBB00]' : 'text-[#0195FF]'}`} />

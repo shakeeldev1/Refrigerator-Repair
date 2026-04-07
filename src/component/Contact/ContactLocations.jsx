@@ -4,20 +4,20 @@ import { TbMapPin, TbPhoneCall, TbClock } from 'react-icons/tb';
 
 const locations = [
   {
-    area: "Naif, Deira Dubai",
-    desc: "Professional refrigerator repair solutions for residential and commercial clients across central Dubai.",
+    area: "Madinat Zayed, Abu Dhabi",
+    desc: "Professional refrigerator repair solutions for residential and commercial clients across central Abu Dhabi.",
     phone: "+971 50 125 4393",
     hours: "Mon-Fri: 9:00 - 20:00 | Sat: 11:00 - 15:00",
   },
   {
-    area: "Al Barsha, Dubai",
-    desc: "Quick response service for cooling repairs, gas charging, and component replacement throughout northern areas.",
+    area: "Al Khalidiyah, Abu Dhabi",
+    desc: "Quick response service for cooling repairs, gas charging, and component replacement throughout surrounding areas.",
     phone: "+971 50 125 4393",
     hours: "Mon-Fri: 9:00 - 20:00 | Sat: 11:00 - 15:00",
   },
   {
-    area: "Jumeirah Area, Dubai",
-    desc: "Reliable on-site refrigerator servicing covering southern Dubai locations with trained technicians.",
+    area: "Al Reem Island, Abu Dhabi",
+    desc: "Reliable on-site refrigerator servicing covering all nearby locations with trained and certified technicians.",
     phone: "+971 50 125 4393",
     hours: "Mon-Fri: 9:00 - 20:00 | Sat: 11:00 - 15:00",
   }
