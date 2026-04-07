@@ -13,11 +13,13 @@ import Blogs from './pages/Blogs';
 import BlogDetail from './component/Blogs/BlogDetail';
 import ScrollToTop from './pages/ScrollToTop';
 import GasStovePage from './pages/GasStovePage';
+import ConnectionPage from './pages/ConnectionPage';
 const MainLayout = () => {
   return (
     <>
       <Navbar />
       <ScrollToTop/>
+      <ConnectionPage />
       <Outlet />
       <Footer/>
     </>

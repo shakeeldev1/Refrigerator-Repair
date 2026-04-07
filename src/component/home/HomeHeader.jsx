@@ -49,6 +49,17 @@ const slides = [
 export default function HomeHeader() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const phoneNumber = "00971529820114";
+
+  const handleCall = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  const handleWhatsapp = () => {
+    const message = encodeURIComponent("Hello, I want to contact you.");
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  };
+
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % slides.length);
   };
@@ -67,7 +78,6 @@ export default function HomeHeader() {
   return (
     <section className="relative w-full min-h-[100vh] flex flex-col items-center justify-center overflow-hidden bg-[#142A51]">
       
-      {/* BACKGROUND IMAGE LAYER */}
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -77,36 +87,27 @@ export default function HomeHeader() {
           transition={{ duration: 1 }}
           className="absolute inset-0 w-full h-full z-0"
         >
-          {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${currentSlide.image})` }}
           />
-          {/* Overlays to make text readable */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#142A51]/90 via-[#142A51]/70 to-[#142A51]/90" />
           <div className="absolute inset-0 bg-[#0195FF]/10 mix-blend-overlay" />
         </motion.div>
       </AnimatePresence>
 
-      {/* SIDE NAVIGATION ARROWS (Hidden on very small mobile, visible on sm and up) */}
       <div className="absolute z-30 inset-y-0 left-0 hidden md:flex items-center px-2 sm:px-6">
-        <button 
-            onClick={prevSlide} 
-            className="w-10 h-10 md:w-10 md:h-10 rounded-full bg-black/20 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-[#FFBB00] hover:text-[#142A51] transition-all"
-        >
-          <FaChevronLeft className="ml-[-2px] sm:ml-[-4px]" />
-        </button>
-      </div>
-      <div className="absolute z-30 inset-y-0 right-0 hidden md:flex items-center px-2 sm:px-6">
-        <button 
-            onClick={nextSlide} 
-            className=" md:w-10 md:h-10 rounded-full bg-black/20 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-[#FFBB00] hover:text-[#142A51] transition-all"
-        >
-          <FaChevronRight className="mr-[-2px] sm:mr-[-4px]" />
+        <button onClick={prevSlide} className="w-10 h-10 rounded-full bg-black/20 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-[#FFBB00] hover:text-[#142A51] transition-all">
+          <FaChevronLeft />
         </button>
       </div>
 
-      {/* MAIN CONTENT LAYER (Centered) */}
+      <div className="absolute z-30 inset-y-0 right-0 hidden md:flex items-center px-2 sm:px-6">
+        <button onClick={nextSlide} className="w-10 h-10 rounded-full bg-black/20 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-[#FFBB00] hover:text-[#142A51] transition-all">
+          <FaChevronRight />
+        </button>
+      </div>
+
       <div className="relative z-10 w-full md:max-w-5xl mx-auto px-10 sm:px-16 py-20 flex-grow flex flex-col justify-center items-center text-center">
         <AnimatePresence mode="wait">
           <motion.div
@@ -128,27 +129,36 @@ export default function HomeHeader() {
               </span>
             </h1>
 
-            <p className="text-white/80 text-lg   mb-10 max-w-3xl leading-relaxed font-light px-4">
+            <p className="text-white/80 text-lg mb-10 max-w-3xl leading-relaxed font-light px-4">
               {currentSlide.description}
             </p>
 
-            {/* Centered Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center  sm:w-auto">
-              <button className="w-full sm:w-auto bg-[#FFBB00] hover:bg-[#feaa14] text-[#142A51] md:font-bold  px-2 md:px-8 py-2 rounded-full flex items-center justify-center gap-3 transition-colors shadow-lg shadow-[#FFBB00]/20 text-lg">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center sm:w-auto">
+              
+              {/* ✅ CALL BUTTON LOGIC */}
+              <button
+                onClick={handleCall}
+                className="w-full sm:w-auto cursor-pointer bg-[#FFBB00] hover:bg-[#feaa14] text-[#142A51] md:font-bold px-2 md:px-8 py-2 rounded-full flex items-center justify-center gap-3 transition-colors shadow-lg shadow-[#FFBB00]/20 text-lg"
+              >
                 <FaPhoneAlt />
                 {currentSlide.buttonText}
               </button>
-              <button className="w-full sm:w-auto border-2 border-white/30 hover:border-white hover:bg-white/10 text-white md:font-semibold  px-4 md:px-5 py-2 rounded-full flex items-center justify-center gap-3 transition-colors text-lg">
+
+              {/* ✅ WHATSAPP BUTTON LOGIC */}
+              <button
+                onClick={handleWhatsapp}
+                className="w-full sm:w-auto border-2 cursor-pointer border-white/30 hover:border-white hover:bg-white/10 text-white md:font-semibold px-4 md:px-5 py-2 rounded-full flex items-center justify-center gap-3 transition-colors text-lg"
+              >
                 <FaWhatsapp size={22} />
                 WhatsApp Us
               </button>
+
             </div>
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* BOTTOM SLIDE DOTS */}
-      <div className="relative hidden   z-20 w-full max-w-7xl mx-auto px-6 pb-10 md:flex justify-center items-center">
+      <div className="relative hidden z-20 w-full max-w-7xl mx-auto px-6 pb-10 md:flex justify-center items-center">
         <div className="flex gap-3">
           {slides.map((_, index) => (
             <button
@@ -157,7 +167,6 @@ export default function HomeHeader() {
               className={`h-2 rounded-full transition-all duration-300 ${
                 index === currentIndex ? "w-10 bg-[#FFBB00]" : "w-2 bg-white/30 hover:bg-white/60"
               }`}
-              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
