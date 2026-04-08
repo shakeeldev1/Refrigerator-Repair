@@ -5,45 +5,29 @@ import { TbFridge, TbWashMachine, TbMicrowave, TbAirConditioning } from 'react-i
 
 const slides = [
   {
-    id: 1,
-    title: "24/7 Expert Appliance &",
-    highlightedText: "FrontLoad Washing Machine",
-    description: "Fast, reliable, and affordable repair services for your home and business. From specialized fridge cooling solutions to complete kitchen appliance care, our certified technicians are ready to restore your comfort.",
-    image: "https://i.pinimg.com/1200x/15/87/0a/15870a30336f9e2ae692d6d5632c74ce.jpg",
-    icon: TbFridge,
-    badge: "Emergency Response",
-    buttonText: "Call Now",
-  },
-  {
-    id: 2,
-    title: "Professional Washing Machine",
-    highlightedText: "Repair Services",
+    title: "Expert Care for Your",
+    highlightedText: "Washing Machine",
     description: "Is your washing machine making strange noises or not spinning? Our experts diagnose and fix all major brands with same-day service. Get your laundry back on track today!",
-    image: "https://img.freepik.com/premium-photo/practical-home-maintenance-professional-worker-repairing-household-washing-machine_257123-47445.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
-    icon: TbWashMachine,
+    image: "https://img.freepik.com/premium-photo/working-man-plumber-repairs-washing-machine-home-washing-machine-installation-repair-plumber-connecting-appliance_353017-416.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
     badge: "Same Day Service",
     buttonText: "Book Now",
   },
   {
-    id: 3,
-    title: "Premium Oven & Cooktop",
-    highlightedText: "Repair Experts",
-    description: "Don't let a broken oven ruin your cooking plans. Our certified technicians repair all major brands with genuine parts. 90-day warranty on all repairs.",
-    image: "https://i.pinimg.com/1200x/02/62/fc/0262fc4d8ebcd11818258243f6ca780d.jpg",
-    icon: TbMicrowave,
+    title: "24/7 Professional",
+    highlightedText: "Refrigerator Repair",
+    description: "Fast, reliable, and affordable repair services for your home. From specialized fridge cooling solutions to complete care, our certified technicians are ready to restore your comfort.",
+    image: "https://img.freepik.com/premium-photo/man-repairing-fridge-with-customer_656932-2770.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
     badge: "Certified Technicians",
-    buttonText: "Get Quote",
+    buttonText: "Contact Us",
   },
   {
-    id: 4,
-    title: "AC Installation &",
-    highlightedText: "Repair Services",
-    description: "Stay cool all year round with our professional AC maintenance and repair services. Free inspection with every repair call. Energy-efficient solutions available.",
+    title: "Complete AC Installation &",
+    highlightedText: "AC Repair Services",
+    description: "Stay cool all year round with our professional AC installation, maintenance, and repair services. Free inspection with every repair call. Energy-efficient solutions available.",
     image: "https://img.freepik.com/free-photo/wireman-dissasembling-air-conditioner_482257-91015.jpg?ga=GA1.1.1146211304.1754028702&semt=ais_hybrid&w=740&q=80",
-    icon: TbAirConditioning,
     badge: "24/7 Support",
     buttonText: "Call Us",
-  },
+  }
 ];
 
 export default function HomeHeader() {
@@ -77,7 +61,7 @@ export default function HomeHeader() {
 
   return (
     <section className="relative w-full min-h-[100vh] flex flex-col items-center justify-center overflow-hidden bg-[#142A51]">
-      
+
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -91,7 +75,7 @@ export default function HomeHeader() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${currentSlide.image})` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#142A51]/90 via-[#142A51]/70 to-[#142A51]/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#142A51]/50 via-[#142A51]/70 to-[#142A51]/90" />
           <div className="absolute inset-0 bg-[#0195FF]/10 mix-blend-overlay" />
         </motion.div>
       </AnimatePresence>
@@ -134,14 +118,17 @@ export default function HomeHeader() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center sm:w-auto">
-              
+
               {/* ✅ CALL BUTTON LOGIC */}
+
               <button
                 onClick={handleCall}
                 className="w-full sm:w-auto cursor-pointer bg-[#FFBB00] hover:bg-[#feaa14] text-[#142A51] md:font-bold px-2 md:px-8 py-2 rounded-full flex items-center justify-center gap-3 transition-colors shadow-lg shadow-[#FFBB00]/20 text-lg"
               >
                 <FaPhoneAlt />
-                {currentSlide.buttonText}
+                <a href="https://wa.me/971529820114" target="_blank" rel="noopener noreferrer">
+                  {currentSlide.buttonText}
+                </a>
               </button>
 
               {/* ✅ WHATSAPP BUTTON LOGIC */}
@@ -150,7 +137,9 @@ export default function HomeHeader() {
                 className="w-full sm:w-auto border-2 cursor-pointer border-white/30 hover:border-white hover:bg-white/10 text-white md:font-semibold px-4 md:px-5 py-2 rounded-full flex items-center justify-center gap-3 transition-colors text-lg"
               >
                 <FaWhatsapp size={22} />
-                WhatsApp Us
+                <a href="https://wa.me/+971529820114" target="_blank" rel="noopener noreferrer">
+                  WhatsApp Us
+                </a>
               </button>
 
             </div>
@@ -164,9 +153,8 @@ export default function HomeHeader() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "w-10 bg-[#FFBB00]" : "w-2 bg-white/30 hover:bg-white/60"
-              }`}
+              className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex ? "w-10 bg-[#FFBB00]" : "w-2 bg-white/30 hover:bg-white/60"
+                }`}
             />
           ))}
         </div>

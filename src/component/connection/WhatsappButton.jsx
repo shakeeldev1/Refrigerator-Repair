@@ -2,7 +2,7 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 function WhatsappButton() {
-  const phoneNumber = "00971529820114";
+  const phoneNumber = "+971529820114";
 
   const handleWhatsapp = () => {
     const message = encodeURIComponent("Hello, I want to contact you.");
@@ -14,7 +14,7 @@ function WhatsappButton() {
       <button
         onClick={handleWhatsapp}
         className="relative flex items-center cursor-pointer justify-center bg-green-500 hover:bg-green-600 text-white 
-                   w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-xl 
+                   w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-xl 
                    transition-all duration-300 hover:scale-110 active:scale-95"
       >
         {/* Pulse Ring */}
