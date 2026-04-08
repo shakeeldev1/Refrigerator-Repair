@@ -11,9 +11,9 @@ function Footer() {
         {/* BRAND */}
         <div>
           <Link to="/">
-            <img src="/logo.jpeg" alt="logo" className="h-14 w-14 rounded-md" />
+            <img src="src/assets/images/refrigirator-log.jpeg" alt="logo" className="h-14 w-14 rounded-md mb-2" />
           </Link>
-          <h2 className="text-2xl font-bold text-[#FFBB00] mb-4">
+          <h2 className="text-2xl font-bold text-[#FFBB00] mb-2">
             Eco Spin Repair
           </h2>
           <p className="text-gray-300 text-sm leading-relaxed">
@@ -22,7 +22,7 @@ function Footer() {
           </p>
 
           {/* SOCIAL ICONS */}
-          <div className="flex gap-4 mt-6 text-[#FFBB00] text-xl">
+          <div className="flex gap-4 mt-3 text-[#FFBB00] text-xl">
             <FaFacebook className="cursor-pointer hover:scale-110 transition" />
             <FaTwitter className="cursor-pointer hover:scale-110 transition" />
             <FaInstagram className="cursor-pointer hover:scale-110 transition" />
