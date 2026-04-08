@@ -124,13 +124,11 @@ export default function HomeHeader() {
               {/* ✅ CALL BUTTON LOGIC */}
 
               <button
-                // onClick={handleCall}
+                onClick={handleCall}
                 className="w-full sm:w-auto cursor-pointer bg-[#FFBB00] hover:bg-[#feaa14] text-[#142A51] md:font-bold px-2 md:px-8 py-2 rounded-full flex items-center justify-center gap-3 transition-colors shadow-lg shadow-[#FFBB00]/20 text-lg"
               >
-                <FaPhoneAlt />
-                <a href="https://wa.me/00971529820114" target="_blank" rel="noopener noreferrer">
+                <FaPhoneAlt /> 
                   {currentSlide.buttonText}
-                </a>
               </button>
 
               {/* ✅ WHATSAPP BUTTON LOGIC */}
