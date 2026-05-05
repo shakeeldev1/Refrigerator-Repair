@@ -12,9 +12,9 @@ function DishwasherrepairHero() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-[#142A51] text-white flex items-center px-4 md:px-12 py-16 overflow-hidden">
+    <div className="w-full min-h-screen bg-[#142A51] text-white flex items-center px-4 md:px-12 py-20 md:py-46 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center justify-center">
 
         {/* LEFT CONTENT */}
         <div data-aos="fade-right">

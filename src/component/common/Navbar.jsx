@@ -99,6 +99,7 @@ function Navbar() {
                   <DropdownItem to="/fridgeservices" label="Fridge Repair" onClick={() => setDesktopServicesOpen(false)} />
                   <DropdownItem to="/dishwasherservice" label="Dishwasher Repair" onClick={() => setDesktopServicesOpen(false)} />
                   <DropdownItem to="/washing-machineservice" label="Washing Machine Repair" onClick={() => setDesktopServicesOpen(false)} />
+                  <DropdownItem to="/dryerservice" label="Dryer Repair" onClick={() => setDesktopServicesOpen(false)} />
                   <DropdownItem to="/gas-cookerservice" label="Gas Cooker Repair" onClick={() => setDesktopServicesOpen(false)} />
                   <DropdownItem to="/electric-stoveservice" label="Electric Stove Repair" onClick={() => setDesktopServicesOpen(false)} />
                 </div>
@@ -159,6 +160,7 @@ function Navbar() {
                 <Link to="/fridgeservices" className="text-sm text-slate-300 hover:text-[#FFBB00]" onClick={() => setMobileMenu(false)}>Fridge Repair</Link>
                 <Link to="/dishwasherservice" className="text-sm text-slate-300 hover:text-[#FFBB00]" onClick={() => setMobileMenu(false)}>Dishwasher Repair</Link>
                 <Link to="/washing-machineservice" className="text-sm text-slate-300 hover:text-[#FFBB00]" onClick={() => setMobileMenu(false)}>Washing Machine Repair</Link>
+                <Link to="/dryerservice" className="text-sm text-slate-300 hover:text-[#FFBB00]" onClick={() => setMobileMenu(false)}>Dryer Repair</Link>
                 <Link to="/gas-cookerservice" className="text-sm text-slate-300 hover:text-[#FFBB00]" onClick={() => setMobileMenu(false)}>Gas Cooker Repair</Link>
                 <Link to="/electric-stoveservice" className="text-sm text-slate-300 hover:text-[#FFBB00]" onClick={() => setMobileMenu(false)}>Electric Stove Repair</Link>
               </div>

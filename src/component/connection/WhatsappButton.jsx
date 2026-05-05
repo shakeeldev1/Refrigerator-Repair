@@ -5,7 +5,7 @@ function WhatsappButton() {
   const phoneNumber = "+971529820114";
 
   const handleWhatsapp = () => {
-    const message = encodeURIComponent("Hello, How Can i help you.");
+    const message = encodeURIComponent("Hi, I need repair service for my appliance can you help?");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 

@@ -5,7 +5,7 @@ import TrustedDishWasher from '../component/dishwasher/TrustedDishWasher'
 
 function Dishwasherpage() {
   return (
-    <div>
+    <div className=''>
       <DishwasherrepairHero/>
       <DishWasherAppliances/>
       <TrustedDishWasher/>

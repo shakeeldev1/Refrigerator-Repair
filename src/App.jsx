@@ -14,6 +14,7 @@ import BlogDetail from './component/Blogs/BlogDetail';
 import ScrollToTop from './pages/ScrollToTop';
 import GasStovePage from './pages/GasStovePage';
 import ConnectionPage from './pages/ConnectionPage';
+import Dryer from './pages/Dryer';
 const MainLayout = () => {
   return (
     <>
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/washing-machineservice",
         element: <WashineMachinePage/>,
+      },
+      {
+        path: "/dryerservice",
+        element: <Dryer/>,
       },
       {
         path: "/gas-cookerservice",
